@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'stormGust';
+  src: url(./Storm\ Gust.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+#box {
+  width: 100%;
+  height: 100%;
+  background-image: url(./photo-1.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box:hover {
+  background-image: url(./photo-2.jpg);
+  background-size: cover;
+  background-position: center;
+  /* transition: background-image 0.5s ease-in-out; */
+}
+
+
+.heading::after {
+  content: "Stars can't shine without darkness";
+  font-family: 'stormGust', sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
+  /* color: #ffd700; */
+  line-height: 1.3em;
+  letter-spacing: 4px;
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+}
+
+#box:hover .heading::after {
+  content: "Every day is a new beginning.";
+  font-family: 'stormGust', sans-serif;
+}
+
+/* #content h1::after {
+  content: "Stars can't shine without darkness";
+  display: block;
+  font-size: 1.2rem;
+  color: #ffea00;
+  margin-top: 8px;
+} */
+
+
+.container{
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  opacity: 0.7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(160, 20, 7, 0.2);
+}
+
+#content {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#content div input{
+  padding: 10px;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #03d6ba;
+  border-radius: 5px;
+  font-size: 1em;
+  /* opacity: none; */
+}
+
+#content button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #d65206;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#content button:hover {
+  transition:  0.3s ease-in-out; 
+  padding: 15px 25px;
+  background-color: #ff0000;
+}
