@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 65, 63);
+}
+
+.card {
+  height: 450px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.userName {
+  width: 100%;
+  height: 78px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+
+.img {
+  background: url(https://i.pinimg.com/736x/7a/f3/ba/7af3babb49686deac4350e5c4479b380.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+.likeCommet {
+  height: 110px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 10px 10px;
+}
+
+.profile-image {
+  margin: 10px 5px 10px 5px;
+}
+
+.profile-image i {
+  font-size: 34px;
+}
+
+.icons {
+  padding: 3px 0 3px 5px;
+  margin: 3px 0 3px 5px;
+}
+
+.icons i {
+  font-size: 25px;
+  font-weight: 100;
+  border: none;
+}
+
+.like {
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1.5px black;
+  cursor: pointer;
+
+}
+
+.cmnt {
+  cursor: pointer;
+}
+
+.share {
+  cursor: pointer;
+}
+
+.likes-Count {
+  padding: 0 0 5px 5px;
+  margin: 0 0 5px 5px;
+}
+
+.caption {
+  margin: 5px 0 5px 10px;
+  display: flex;
+}
+
+.caption h6 {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.caption p {
+  font-weight: 100;
+  font-size: 13px;
+}
+
+
+#love {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  opacity: 0;
+
+
+  background-image: url(https://t3.ftcdn.net/jpg/01/14/77/58/360_F_114775804_4yfG9qbKp1NlF1RLo4MUlGIVj9MWhnnc.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  transform: translate(-50%, -50%) scale(0) rotate(-60deg);
+  transition: all cubic-bezier(.65, 1, .77, 2.44) 0.34s;
+}
