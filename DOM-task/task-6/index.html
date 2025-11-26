@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Piano</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h1>Virtual Piano</h1>
+      <div class="outer">
+        <div class="inner-top">
+          <button class='radio-btn'>
+          <i class="ri-router-line"></i>
+          </button>
+          <button class='radio-btn'>
+          <i class="ri-rfid-line"></i>
+          </button>
+        </div>
+
+        <!-- keys -->
+        <div id="piano"> 
+              <div class="key white-key" data-note="C4"></div>
+              <div class="key white-key" data-note="D4"></div>
+              <div class="key white-key" data-note="E4"></div>
+              <div class="key white-key" data-note="F4"></div>
+              <div class="key white-key" data-note="G4"></div>
+              <div class="key white-key" data-note="A4"></div>
+              <div class="key white-key" data-note="B4"></div>
+              <div class="key white-key" data-note="C5"></div>
+
+              <div class="key black-key" data-note="Cs4"></div>
+              <div class="key black-key" data-note="Ds4"></div>
+              <div class="key black-key" data-note="Fs4"></div>
+              <div class="key black-key" data-note="Gs4"></div>
+              <div class="key black-key" data-note="As4"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
