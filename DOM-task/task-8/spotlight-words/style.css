@@ -1,0 +1,77 @@
+/* Universal Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  font-family: sans-serif;
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
+  position: relative;
+}
+
+:root {
+  --x: 200px;
+  --y: 200px;
+  --r: 0px;
+}
+
+
+p {
+  font-size: 40px;
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  z-index: 1;
+  color: transparent;
+  cursor: pointer;
+
+  /* radial reveal text */
+  background: radial-gradient(circle var(--r) at var(--x) var(--y),
+      rgba(0, 255, 0, 1) 0%,
+      rgba(0, 200, 0, 1) 40%,
+      transparent 41%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background 120ms linear;
+}
+
+.box {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  overflow: hidden;
+}
+
+p:hover,
+p.active {
+  --r: 220px;
+}
+
+
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle 320px at var(--x) var(--y),
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.5) 25%,
+      rgba(255, 255, 255, 0.04) 50%,
+      rgba(0, 0, 0, 0) 85%);
+  mix-blend-mode: screen;
+  z-index: 2;
+}
